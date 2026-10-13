@@ -1,0 +1,23 @@
+/* Minimal base – Ionic supplies the component styles, variables.css the palette. */
+* { -webkit-tap-highlight-color: transparent; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #0f1115;
+  color: #e7ebf1;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+#root,
+ion-app { height: 100%; }
+
+ion-app { display: flex; flex-direction: column; }
+ion-header,
+ion-footer { flex: 0 0 auto; }
+
+/* screens that hold a fixed-height board fill the shell; the rest scroll */
+ion-content.game,
+ion-content.homeScreen { --background: #0f1115; }

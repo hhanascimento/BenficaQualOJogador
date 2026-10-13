@@ -1,0 +1,114 @@
+/* ---------- instructions ---------- */
+.helpScreen {
+  --background: radial-gradient(circle at 50% 10%, #1a0d10 0%, #0f1115 60%);
+  --padding-start: 14px;
+  --padding-end: 14px;
+  --padding-bottom: 30px;
+}
+
+.help {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 18px 4px 8px;
+  color: #d6dbe3;
+}
+
+.help__logo {
+  display: block;
+  /* crest + wordmark lockup */
+  width: 100px;
+  height: auto;
+  margin: 2px auto 12px;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.5));
+}
+
+.help__title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+
+.help__lead {
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #9aa4b2;
+  text-align: center;
+}
+
+.help__head {
+  margin: 22px 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffc400;
+}
+
+.help__steps,
+.help__rules {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.help__steps { counter-reset: step; }
+
+.help__steps li {
+  position: relative;
+  padding: 0 0 12px 34px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #c7ced9;
+  counter-increment: step;
+}
+
+.help__steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(179, 0, 0, 0.28);
+  border: 1px solid #b30000;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ff9aa8;
+}
+
+.help__rules li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: #1b1f27;
+  border: 1px solid #262c37;
+  border-radius: 10px;
+}
+
+.help__rules ion-icon { font-size: 18px; color: #ffc400; margin-top: 2px; flex: 0 0 auto; }
+
+.help__rules strong { display: block; font-size: 14px; color: #fff; margin-bottom: 2px; }
+
+.help__rules span { display: block; font-size: 12.5px; line-height: 1.5; color: #b8c0cc; }
+
+.help__body {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #c7ced9;
+}
+
+.help__note {
+  margin: 20px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #6f7987;
+  text-align: center;
+}
