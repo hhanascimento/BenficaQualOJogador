@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Benfica - Qual o Jogador</string>
+    <string name="title_activity_main">Benfica - Qual o Jogador</string>
+    <string name="package_name">com.benficaqualojogador.app</string>
+    <string name="custom_url_scheme">com.benficaqualojogador.app</string>
+</resources>
